@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo32.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/b5fbb07608.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="light-mode">
+
+    <!-- <nav class="nav"> 
+        <div class="logo">
+            <img src="./logo32.png" alt="my project" >
+            <h1>My Project Generator</h1>
+        </div>
+
+        <div class="modeSwitch" id="modeSwitch">
+            <i id="sun_btn" class="fa-regular fa-sun fa-xl"  style="display: none;"  onclick="modeSwitch('light')"></i>
+            <i id="moon_btn" class="fa-regular fa-moon fa-xl"  onclick="modeSwitch('dark')"></i>
+        </div>
+    </nav> -->
+
+    <div class="wrapped" id="wrapped">
+        <div class="container" id="container">
+            <h3>Get a Unique Project</h3>
+            <p>Build your portfolio. Grow your skills.</p>
+
+            <img src="./empty.svg" alt="holder">
+
+            <p>Click to generate a small website project ideas <br> you can create using HTML, CSS, and JavaScript</p>
+
+            <i class="fa-solid fa-arrow-down fa-2xl"></i>
+            <p id="generated-sentence"></p>
+            <button onclick="generateProject()">Generate Sentence</button>
+
+
+        </div>
+    </div>
+
+
+
+    <div class="generated wrapped" id="resultsContainer">
+        <div class="container">
+            <h3>Your work project</h3>
+
+            <h4>Project Description:</h4>
+            <p id="project"></p>
+
+            <h4>The Deadline:</h4>
+            <p id="deadline"></p>
+
+            <button onclick="generateProject()">Generate Sentence</button>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
